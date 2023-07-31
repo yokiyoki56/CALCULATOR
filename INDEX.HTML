@@ -1,0 +1,73 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcii</title>
+
+</head>
+<body>
+    <div id="center">
+        <div id="b1"><center><h1 style="color: red;">SIMPLE CALCULATOR</h1></center> <hr>
+       <br><br><br> <label>ENTER THE NUMBER</label>
+    <input type="number" name="n1" id="n1"> &nbsp;&nbsp;&nbsp;&nbsp;
+<label>ENTER SECOND NUMBER</label>
+<input type="number" name="n2" id="n2"><br><br><br><br>
+<hr>
+
+<label for="add">ADDITION</label>
+<button id="b1" type="button" onclick="addition()">+</button>
+<p type="button1" placeholder="ans" class="add"></p>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<LABel>SUBTARCTION</LABel>
+<button id="b2" type="button" onclick="subtraction()">-</button>
+<p type="button2" placeholder="ans" class="sub"></p>&nbsp;&nbsp;&nbsp;&nbsp;
+<LABel>MULTIPLY</LABel>
+<button id="b3" type="button" onclick="multiply()">*</button>
+<p type="button3" placeholder="ans" class="mul"></p>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<LABel>DIVISION</LABel>
+<button id="b4" type="button" onclick="division()">%</button>
+<p type="button4" placeholder="ans" class="div"></p>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<SCript>
+    function addition(){
+    let a=parseInt(document.getElementById("n1").value);
+    let b=parseInt(document.getElementById("n2").value);
+    let c=a+b;
+    document.getElementById("b1").innerHTML="addition of given value is"+c;
+}
+
+
+
+function subtraction(){
+    let a=parseInt(document.getElementById("n1").value);
+    let b=parseInt(document.getElementById("n2").value);
+    let c=a-b;
+    document.getElementById("b2").innerHTML="subtraction of given value is"+c;
+}
+
+
+function multiply(){
+    let a=parseInt(document.getElementById("n1").value);
+    let b=parseInt(document.getElementById("n2").value);
+    let c=a*b;
+    document.getElementById("b3").innerHTML="multiply of given value is"+c;
+}
+
+
+function division(){
+    let a=parseInt(document.getElementById("n1").value);
+    let b=parseInt(document.getElementById("n2").value);
+    let c=a%b;
+    document.getElementById("b4").innerHTML="division of given value is"+c;
+}
+</SCript>
+
+
+
+</div>
+    </div>
+</body>
+</html>
